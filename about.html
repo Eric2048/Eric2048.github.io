@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Emily Del Sesto</title>
+		<title>About - Emily Del Sesto</title>
 
 		<!-- Bootstrap 4 (Beta) and its required dependencies -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -42,11 +42,10 @@
 		      <li class="nav-item">
 		        <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
 		      </li>
-
 <!-- 		      <li class="nav-item">
 		        <a class="nav-link" href="skills.html">skills</a>
 		      </li> -->
-		      <li class="nav-item">
+		      <li class="nav-item active">
 		        <a class="nav-link" href="about.html">ABOUT</a>
 		      </li>
 		      <li class="nav-item">
@@ -61,34 +60,41 @@
 		</nav>
 		<!-- end of Bootstrap NavBar -->
 
+
 		<div class="container">
 
 
+<!-- row1 -->
 
 
-	<!-- slide -->
+			<div class="clear"></div>
+
+<!-- row2 -->
+
 			<div class="col100">
-				<div class="col100" id="center">
-					<section id="faded">
-						<div class="slides">
-							<img class="imgSizer" src="images/openWebSlide.png" />
-							<img class="imgSizer" src="images/bevWebSlide.png" />
-
-
-
-
-							 <!-- style="display:none;" THIS WAS AFTER OPENWEBSLIDE>PNG" _____/> BUT IDK WHY -->
-							
-							<!--<img src="_images/dreams.jpg" height="450" width="700" />
-							<img src="_images/picOne.jpg" height="450" width="700" />
-							<img src="_images/dreams.jpg" height="450" width="700" />-->
-						</div>
-					</section>	
-				</div>
+				<p>
+					<h8>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Emily Del Sesto is a Graphic Designer, Illustrator and Web Designer based in Los Angeles, California. She has been working as a freelance Graphic Designer since graduating from The Fashion Institute of Design and Merchandising (FIDM) in June 2017 with an Associate of Arts degree in Graphic Design. 
+					</h8>
+				</p>
+				<p>
+				<div class="clear"></div>
+					<h8>
+					Tools: Adobe InDesign, Adobe Illustrator, Adobe Photoshop, Sublime Text
+					</h8>
+				</p>
 			</div>
-	<!-- end -->
+			<!-- <div class="colOneThird">
+				<img src="images/bevTag.png" class="imgSizer">
+			</div> -->
 
-		<div class="col100 footer">
+			<!-- Emily Del Sesto is a Graphic Designer, Illustrator and Web Designer based in Los Angeles. She has been working as a freelance graphic designer since graduating from The Fashion Institute of Design and Merchandising (FIDM) in June 2017 with an Associate of Arts degree in Graphic Design. She is proficient in Adobe InDesign, Illustrator and Photoshop. -->
+				
+
+			<div class="clear"></div>
+
+
+
+			<div class="col100 footer">
 			<center>
 				<a href="https://www.instagram.com/emilydelsestodesign/" class="NoUnderline">
 					<img border="0" alt="W3Schools" src="images/instagram.png" width="40" height="40">
@@ -96,45 +102,15 @@
 				<a href="https://www.linkedin.com/in/emilydelsesto/" class="NoUnderline">
 					<img border="0" alt="W3Schools" src="images/linkedin.png" width="34" height="34">
 				</a>
-			</center>
-		</div>
+			</center
+			</div>
 
 
 
-		<!-- Required because every DIV above is float and container DIV gets no height -->
-		<div class = "clear"></div>
+			<!-- Required because every DIV above is float and container DIV gets no height -->
+			<div class = "clear"></div>
 		</div>
 		<!-- end of container -->
-
-		<script type="text/javascript" src="scripts/jquery-3.1.1.min.js"></script>
-		<script type="text/javascript">
-	 		$(document).ready(function () {
-	 	 	  console.log("slide() running...");
-
-	 	    /* Slowly fade in, pause, then fade in the other image */
-	 	    function slide() {
-					var firstImg = $("#faded .slides img:first");
-					var lastImg = $("#faded .slides img:last");
-
-	 	    	/* Make the last image visible but at 0% */
-  			  lastImg.css({"opacity": 1, "display": "block"});
-
-					/* Move it into the first position */
-          lastImg.prependTo("#faded .slides");
-
-					/* Hide the new last image */
-  			  firstImg.css({"display": "none"});
-
-          /* Slowly unhide the new first image */
-					lastImg.animate({"opacity": 300 }, 1000,
-						/* pause before repeating */
-						function (){
-						  setTimeout(slide, 2200);
-					  }
-					);
-	 	    };
-				slide();
-	    });
-	  </script>
 	</body>
 </html>
+

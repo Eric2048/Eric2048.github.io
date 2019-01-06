@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Emily Del Sesto</title>
+		<title>Ink Magazine - Emily Del Sesto</title>
 
 		<!-- Bootstrap 4 (Beta) and its required dependencies -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -39,10 +39,23 @@
 
 		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
 		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item">
-		        <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+		      <li class="nav-item dropdown active">
+		        <!-- <a class="nav-link" href="portfolio.html">PORTFOLIO</a> -->
+		        <a class="nav-link dropdown-toggle" id="navbarPortfolioDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="portfolio.html">PORTFOLIO<span class="sr-only">(current)</span></a>
+		        <div class="dropdown-menu" aria-labelledby="navbarPortfolioDropdown">
+		          <a class="dropdown-item" href="portfolio.html">PORTFOLIO</a>
+              <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="leo.html">LEO THE CHAMELEON</a>
+		          <a class="dropdown-item" href="inkmag.html">INK</a>
+		          <a class="dropdown-item" href="bev.html">BEV ROSÉ</a>
+		          <a class="dropdown-item" href="markhor.html">MARKHOR</a>
+		          <a class="dropdown-item" href="blanc.html">BLANC</a>
+		          <a class="dropdown-item" href="illustration.html">ILLUSTRATIONS</a>
+		          <a class="dropdown-item" href="logo.html">LOGOS</a>
+              <!-- <div class="dropdown-divider"></div> -->
+		          <!-- <div class="dropdown-header">More stuff</div> -->
+        		</div>
 		      </li>
-
 <!-- 		      <li class="nav-item">
 		        <a class="nav-link" href="skills.html">skills</a>
 		      </li> -->
@@ -53,88 +66,52 @@
 		        <a class="nav-link" href="contact.html">CONTACT</a>
 		      </li>
 		    </ul>
-		    <!--<form class="form-inline my-2 my-lg-0">
+		   <!--  <form class="form-inline my-2 my-lg-0">
 		      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
 		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		    </form>-->
+		    </form> -->
 		  </div>
 		</nav>
 		<!-- end of Bootstrap NavBar -->
 
 		<div class="container">
-
-
-
-
-	<!-- slide -->
 			<div class="col100">
-				<div class="col100" id="center">
-					<section id="faded">
-						<div class="slides">
-							<img class="imgSizer" src="images/openWebSlide.png" />
-							<img class="imgSizer" src="images/bevWebSlide.png" />
-
-
-
-
-							 <!-- style="display:none;" THIS WAS AFTER OPENWEBSLIDE>PNG" _____/> BUT IDK WHY -->
-							
-							<!--<img src="_images/dreams.jpg" height="450" width="700" />
-							<img src="_images/picOne.jpg" height="450" width="700" />
-							<img src="_images/dreams.jpg" height="450" width="700" />-->
-						</div>
-					</section>	
-				</div>
+				<img src="images/inkmagLogo.png" class="imgSizer">
 			</div>
-	<!-- end -->
+			<div class="colOneThird">
+				<img src="images/shea.jpg" class="imgSizer dropShadow">
+			</div>
+			<div class="colOneThird">
+				<img src="images/jay.jpg" class="imgSizer dropShadow">
+			</div>
+			<div class="colOneThird">
+				<img src="images/mel.jpg" class="imgSizer dropShadow">
+			</div>
+			<div class="col100">
+				<img src="images/gift.jpg" class="imgSizer dropShadow">
+			</div>
+			<div class="col100">
+				<h6>Photography, Publication Design</h6>
+			</div>
+			<div class="col100">
+
+<!-- footer -->
 
 		<div class="col100 footer">
-			<center>
-				<a href="https://www.instagram.com/emilydelsestodesign/" class="NoUnderline">
-					<img border="0" alt="W3Schools" src="images/instagram.png" width="40" height="40">
-				</a>
-				<a href="https://www.linkedin.com/in/emilydelsesto/" class="NoUnderline">
-					<img border="0" alt="W3Schools" src="images/linkedin.png" width="34" height="34">
-				</a>
-			</center>
+				<center>
+					<a href="https://www.instagram.com/emilydelsestodesign/" class="NoUnderline">
+						<img border="0" alt="W3Schools" src="images/instagram.png" width="40" height="40">
+					</a>
+					<a href="https://www.linkedin.com/in/emilydelsesto/" class="NoUnderline">
+						<img border="0" alt="W3Schools" src="images/linkedin.png" width="34" height="34">
+					</a>
+				</center>
 		</div>
 
-
-
-		<!-- Required because every DIV above is float and container DIV gets no height -->
-		<div class = "clear"></div>
+			<!-- Required because every DIV above is float and container DIV gets no height -->
+			<div class = "clear"></div>
 		</div>
 		<!-- end of container -->
 
-		<script type="text/javascript" src="scripts/jquery-3.1.1.min.js"></script>
-		<script type="text/javascript">
-	 		$(document).ready(function () {
-	 	 	  console.log("slide() running...");
-
-	 	    /* Slowly fade in, pause, then fade in the other image */
-	 	    function slide() {
-					var firstImg = $("#faded .slides img:first");
-					var lastImg = $("#faded .slides img:last");
-
-	 	    	/* Make the last image visible but at 0% */
-  			  lastImg.css({"opacity": 1, "display": "block"});
-
-					/* Move it into the first position */
-          lastImg.prependTo("#faded .slides");
-
-					/* Hide the new last image */
-  			  firstImg.css({"display": "none"});
-
-          /* Slowly unhide the new first image */
-					lastImg.animate({"opacity": 300 }, 1000,
-						/* pause before repeating */
-						function (){
-						  setTimeout(slide, 2200);
-					  }
-					);
-	 	    };
-				slide();
-	    });
-	  </script>
 	</body>
 </html>
