@@ -165,13 +165,13 @@ a.NoUnderline:hover {
 }
 .colTwoThirds{
 	/*background-color:pink;*/
-	width: 64%;
+	width: 60%;
 	margin: 10px 1%;
 	float:left;
 }
 .colOneThird{
 	/*background-color:orange;*/
-	width: 31%;
+	width: 30%;
 	margin: 10px 1%;
   /*  margin: 1%; */
 	float:left;
@@ -233,17 +233,11 @@ h5{
 	font-size:30px;
 }
 h6{
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size:16px;
+  font-family: 'Times New Roman', serif;
+  font-size:20px;
+  text-align:center;
 }
-h7{
-	font-family: 'Fjalla One', sans-serif;
-	font-size:20px;
-}
-h8{
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size:16px; line-height:3px;
-}
+
 
 /* Tablet */
 @media only screen and (max-width: 991px){ /* 991 to match Bootstrap */
@@ -261,11 +255,11 @@ h8{
 	}
 	.colTwoThirds {
 		/*background-color:cyan;*/
-		width: 47%;
+		width: 60%;
 	 }
 	.colOneThird {
 		/*background-color:green;*/
-		width: 45%;
+		width: 30%;
 	}
   .imageTileInfoMobile {
     display: block;
@@ -288,11 +282,11 @@ h8{
 		}
 	 .colOneThird {
 		/*background-color:red;*/
-		width: 42%; /* was 97%; */
+		width: 30%; /* was 97%; */
 	  }
 	 .colTwoThirds{
 	 	/*background-color:green;*/
-		width: 97%;
+		width: 60%;
 	 }
   .imageTileInfoMobile {
     display: block;
