@@ -7,9 +7,9 @@
   width: 100%;
 
   background-color: white !important;
-  
-  /* Show Nav on top of the other page elements that scroll under it. */
-  z-index: 1000;
+ /* why is it grey behind*/
+ z-index: 1000;
+  /* To show Nav on top of the other page elements that scroll under it. */
 }
 
 .navbar > a.navbar-brand {
@@ -38,7 +38,7 @@
   /* Override min-width: 10rem; to fit "LEO THE CHAMELEON". */
   min-width: 11rem;
   width: 11rem;
-
+  
   /* Remove the border from the menu */
   border: none;
 }
@@ -72,7 +72,7 @@ a.nav-link.dropdown-toggle::after {
   content: "";
   border-top: .3em solid;
   border-right: .3em solid transparent;
-  border-left: .3em solid transparent;
+  border-left: .3em solid transparnt;
 }
 
 /******************************************************************************/
@@ -249,7 +249,7 @@ h8{
 @media only screen and (max-width: 991px){ /* 991 to match Bootstrap */
   /* Shift the menus over to the right. Make sure the PORTFOLIO submenu appears correctly. */
   .navbar > div.navbar-collapse > ul.navbar-nav {
-    margin-left: 75%;
+    margin-left: 76%;
   }
 
   /* Stretch from two thirds to Col100 */
@@ -276,7 +276,7 @@ h8{
 @media only screen and (max-width: 592px){ /* was 480 */
   /* Shift the menus over to the right */
   .navbar > div.navbar-collapse > ul.navbar-nav {
-    margin-left: 40%;
+    margin-left: 60%;
   }
 	.hide480{
 			display:none;
