@@ -152,9 +152,10 @@ a.NoUnderline:hover {
   width: 100%;
   text-align: center;
   line-height: 1em;
-  font-family: "HelveticaNeue-CondensedBold";
+  font-family: "Times new roman";
   font-size: 30px;
   color: black;
+  padding-top:10px;
 }
 
 .col100{
