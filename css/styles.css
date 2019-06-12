@@ -88,7 +88,7 @@ a.NoUnderline:hover {
 .container {
 	/*background-color:red;*/
 	/*width: auto;*/
-	max-width: 1000px;
+	max-width: 800px;
 	/*height: 100%;*/
 	margin: 0px auto; 
 
@@ -236,7 +236,7 @@ h5{
 h6{
   font-family: 'Times New Roman', serif;
   font-size:20px;
-  text-align:center;
+  text-align:left;
 }
 
 
