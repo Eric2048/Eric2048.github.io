@@ -132,7 +132,7 @@ a.NoUnderline:hover {
   text-align: center;
   line-height: 1em;
   font-family: "HelveticaNeue-CondensedBold";
-  font-size: 30px;
+  font-size: 40px;
   color: black;
 }
 
@@ -163,6 +163,12 @@ a.NoUnderline:hover {
 	width: 97%;
 	margin: 10px 1%;
 	float:left;
+}
+.col50{
+ /* background-color:pink;*/
+  width: 47%;
+  margin: 10px 1%;
+  float:left;
 }
 .colTwoThirds{
 	/*background-color:pink;*/
