@@ -38,7 +38,7 @@
   /* Override min-width: 10rem; to fit "LEO THE CHAMELEON". */
   min-width: 11rem;
   width: 11rem;
-  
+
   /* Remove the border from the menu */
   border: none;
 }
@@ -90,7 +90,7 @@ a.NoUnderline:hover {
 	/*width: auto;*/
 	max-width: 800px;
 	/*height: 100%;*/
-	margin: 0px auto; 
+	margin: 0px auto;
 
   /* .navbar is position: fixed, so this must match the NavBar height */
   margin-top: 76px;
@@ -126,7 +126,7 @@ a.NoUnderline:hover {
   height: 100%;
 
   /* Make this a table and table cell so that we can center the text vertically. */
-  display: table; 
+  display: table;
   background-color: white;
 
   text-align: center;
@@ -270,6 +270,15 @@ h6{
 	}
   .imageTileInfoMobile {
     display: block;
+    display: none;
+  }
+  .imageTileInfo {
+    opacity: 1;
+    background-color: unset;
+  }
+  .imageTileInfo:hover {
+    opacity: 1;
+    background-color: unset;
   }
 }
 
@@ -298,6 +307,15 @@ h6{
   .imageTileInfoMobile {
     display: block;
     font-size: 12px; /* 26px; */
+    display: none;
+  }
+  .imageTileInfo {
+    opacity: 1;
+    background-color: unset;
+  }
+  .imageTileInfo:hover {
+    opacity: 1;
+    background-color: unset;
   }
 }
 
@@ -313,4 +331,3 @@ font-family: 'Roboto', sans-serif;*/
 /*font-family: 'Fjalla One', sans-serif;
 font-family: 'Contrail One', cursive;
 font-family: 'Roboto Condensed', sans-serif;*/
-
