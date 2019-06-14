@@ -276,10 +276,6 @@ h6{
     opacity: 1;
     background-color: unset;
   }
-  .imageTileInfo:hover {
-    opacity: 1;
-    background-color: unset;
-  }
 }
 
 /* Smartphone */
@@ -310,10 +306,6 @@ h6{
     display: none;
   }
   .imageTileInfo {
-    opacity: 1;
-    background-color: unset;
-  }
-  .imageTileInfo:hover {
     opacity: 1;
     background-color: unset;
   }
