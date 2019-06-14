@@ -15,7 +15,7 @@
 .navbar > a.navbar-brand {
   /* Override to line up with Nav */
   padding-top: 0px;
-  margin-top: -2px;
+  /* margin-top: -2px; */
 }
 
 /* Shift the menus over to the right */
