@@ -1,0 +1,244 @@
+  .logo {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height:40px;
+    /*  background-color: pink !important;*/
+    z-index: 900;
+    /* To show Logo on top of the other page elements that scroll under it. */
+    }
+    .fixed{
+      position: fixed;
+      padding-top:800px;
+      z-index: 1000;
+      padding-left:0px;
+    }
+
+.NoUnderline {
+   text-decoration: none;      
+}
+  /*  NAV*/
+
+
+  #nav{
+    width:100%;
+    float:left;            /* do we need?*/
+    margin-top:-50px;    /* why this layout and whats em */
+    padding-left: 0;
+    list-style: none;
+    position: fixed;
+    padding-top:0px;
+   /* background-color: pink;*/
+
+   }
+
+ /*pulls nav into a horizontal row*/
+  #nav li a {
+    display:block;
+    padding:8px 15px;
+    text-decoration:none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+    color: black;
+    float:left;
+  /*  background-color: red;*/
+
+
+    }
+
+
+
+
+
+  #nav a:active{
+  text-decoration:none;
+  color:red;
+}
+  #nav a:hover{
+  color:pink;
+  text-decoration:none;
+
+}
+
+  #nav a{
+  text-decoration:none;
+  color:black;
+}
+  
+
+
+
+    body {
+	   /*background-color: green;*/
+    }
+    .container {
+  	/* background-color:pink;*/
+	   max-width: 1265px;
+	   margin: 0px auto;
+     margin-top: 100px;
+    }
+
+
+
+    .col100{
+	   /*background-color:blue;*/
+	   width: 97%;
+     height: auto;
+	   margin: 10px 1%;
+	   float:left;
+    }
+    .col50{
+    /*background-color:green;*/
+    width: 47%;
+    margin: 10px 1%;
+    float:left;
+    }
+    .col25{
+    /*background-color:green;*/
+    width: 22.5%;
+    height: 100px;
+    margin: 10px 1%;
+    float:left;
+    background-color: #f0c7a1;
+    }
+    
+    .clear {
+	     clear: both;
+    }
+
+
+
+
+   /* Back to Top arrow*/
+    .back-to-top {
+      position: fixed;
+      bottom: 100px;
+      right: 40px;
+      color: #FFF;
+      background: #41CAD4;
+      line-height: 30px;
+      text-align: center;
+      text-decoration: none;
+      width: 32px;
+      height: 32px;
+      border: 0;
+      border-radius: 50%;
+      /*display: none;*/
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .back-to-top:hover {
+      background: #2DB6C0;
+    }
+/*back to top done*/
+
+
+    .footer{
+    /*	background-color:pink;*/
+    }
+    .imgSizer {
+	     width: 100%;
+	     height: auto;
+    }
+
+
+
+   h1{
+	     font-family: 'Times New Roman', serif;
+	     font-size: 15px;
+    }
+  h2{
+      font-family: 'Ramabhadra', sans-serif;
+      font-size: 18px;
+      padding-left: 5px;
+    }
+  h3{
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 14px;
+      /*padding-left:50px;*/
+    }
+ /* Footer Type*/
+  h4{
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 12px;
+      padding-left:4px;
+    }
+
+    /*for right flush*/
+    h5{
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 14px;
+      padding-left:75%;
+    }
+
+    .hideFull{
+      display:none;
+    }
+    .showFull{
+      display:inherit;
+    }
+
+
+
+
+
+/* TABLET */
+@media only screen and (max-width: 991px){ 
+	 .hide900{
+	   	display:none;
+	 }
+	 .show900{
+	   	display:inherit;
+	 }
+    .container {
+     /*background-color:orange;*/
+     max-width: 991px;
+     margin: 0px auto;
+     margin-top: 100px;
+    }
+   .col50{
+      /*background-color:blue;*/
+      width: 47%;
+      height: auto;
+      margin: 10px 1%;
+      float:left;
+   }
+   h5{
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 14px;
+      padding-left:10px;
+    }
+
+  
+	
+}
+  
+
+
+/* IPHONE */
+@media only screen and (max-width: 500px){
+	.hide500{
+			display:none;
+		}
+	.show500{
+			display:inherit;
+			clear:left;
+			width:100%;
+		}
+    .container {
+     /*background-color:green;*/
+     max-width: 500px;
+     margin: 0px auto;
+     margin-top: 80px;
+    }
+    .col50{
+      background-color:red;
+      width: 45%;
+      height: 30px;
+      margin: 10px 1%;
+      float:left;
+    }
+	 
+}
+
