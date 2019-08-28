@@ -34,7 +34,7 @@
 /*pulls nav into a horizontal row*/
 #nav li a {
   display:block;
-  padding:8px 15px;
+  padding:8px 12px;
   text-decoration:none;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 15px;
@@ -51,7 +51,7 @@
   color:red;
 } */
 #nav a:hover {
-  color:pink;
+  color:#ddeab3;
   text-decoration:none;
 }
 
@@ -100,9 +100,8 @@ body {
 .back-to-top {
   position: fixed;
   bottom: 100px;
-  right: 40px;
-  color: #FFF;
-  background: #41CAD4;
+  right: 25px;
+  color: black;
   line-height: 30px;
   text-align: center;
   text-decoration: none;
@@ -116,7 +115,7 @@ body {
 }
 
 .back-to-top:hover {
-  background: #2DB6C0;
+  color: #ddeab3;
 }
 
 /*back to top done*/

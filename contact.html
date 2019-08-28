@@ -3,6 +3,8 @@
 	<head>
 	<!-- specify character encoding HTML -->
 		<meta charset="UTF-8">
+		<meta name="google" content="notranslate" />
+		<meta http-equiv="Content-Language" content="en_US" />
 
 	<!-- 	Take control of ViewPort ( amount of webpage we can see ) -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,10 +18,8 @@
 
     <!-- Now my styles, so they take priority over the above styles. -->
 		<link href="css/styles.css" rel="stylesheet" type="text/css">
+
 	</head>
-
-
-
 	<body>
 		<div class="container">
 			<div class="col100 logo">
@@ -28,51 +28,94 @@
 				</a>
 			</div>
 
-
 <!-- THIS CONTROLS NAV TOO -->
 	
-		<ul id="nav">
-			<li><a href="digitalmarketing.html">Digital Marketing</a></li>
-			<li><a href="branding.html">Branding</a></li>
-			<li><a href="illustration.html">Illustration</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
+	    <!-- Place Nav inside col100 for consistent margin-left: 1% -->
+			<div class="col100">
+				<ul id="nav">
+					<li><a href="digitalmarketing.html" class="navFirst">Digital Marketing</a></li>
+					<li><a href="branding.html">Branding</a></li>
+					<li><a href="illustration.html">Illustration</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
 
-<!-- CONTENT -->
+			<div class="col100">
+				<h3>Emily Del Sesto</h3>
+				<h3>Los Angeles, CA</h3>
+				<h3>Phone</h3>
+				<h3>Email</h3>
+			</div>
 
-		<div class="col100">
-			<h2>Contact</h2>
-			<h3>emilydelsesto@gmail.com</h3>
-			<h3>instagram: @emilydelsesto</h3>
-		</div>
 
+			
+	<!-- 	<! slide ATTEMPT AT ZOOMED VID-->
+		<!-- <div class="col100">
+				<div class="col100" id="center">
+				   <video class="imgSizer" width="1200" height="800" loop muted autoplay>
+ 						<source src="images/Lemon Test.mp4" type="video/mp4">
+						</video>
+						<section id="faded">
+						<div class="slides">
+							<img class="imgSizer" src="images/BahamasPic.jpg" />
+							<img class="imgSizer" src="images/LemonComputerIll.jpg" />
+						</section>
+						</div>
+		</div> --> 
 
 		<div class="clear"></div>
-
-<!-- SOCIAL MEDIA FOOTER -->
 
 		<div class="col100 footer">
 				<a href="https://www.instagram.com/emilydelsesto/" class="NoUnderline">
 					<img border="0" alt="W3Schools" src="images/instagram.png" width="34" height="34">
 				</a>
 				<a href="https://www.linkedin.com/in/emilydelsesto/" class="NoUnderline">
-					<img border="0" alt="W3Schools" src="images/linkedin.png" width="28" height="28" style="vertical-align: top; padding-top: 4px;">
+					<img border="0" alt="W3Schools" src="images/linkedin.png" width="28" height="28" style="vertical-align: top;padding-top: 4px;">
 				</a>
 				<h4>Web Design by Emily Del Sesto</h4>
 		</div>
 
 
-		<!-- Required because every DIV above is float and container DIV gets no height -->
+
+
+
+
+
+		<!-- Required because every DIV above is float and container DIV gets no height
 			<div class = "clear"></div>
 		</div>
-<!-- end of container -->
+		<!end of container -->
+
+		<script type="text/javascript" src="scripts/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript">
+	 		$(document).ready(function () {
+	 	 	  console.log("slide() running...");
+
+	 	 /* Slowly fade in, pause, then fade in the other image */
+	 	  function slide() {
+				var firstImg = $("#faded .slides img:first");
+				var lastImg = $("#faded .slides img:last");
+
+	 	    /* Make the last image visible but at 0% */
+  			lastImg.css({"opacity": 1, "display": "block"});
+
+					/* Move it into the first position */
+          	lastImg.prependTo("#faded .slides");
+
+					/* Hide the new last image */
+  			firstImg.css({"display": "none"});
+
+          	/* Slowly unhide the new first image */
+			lastImg.animate({"opacity": 300 }, 1000,
+						/* pause before repeating */
+						function (){
+						  setTimeout(slide, 2000);
+					  }
 
 
-<!-- script -->
 
 
-
- <!-- // JAVA FOR SCROLL TO TOP
+ // JAVA FOR SCROLL TO TOP
 
 // // When the user scrolls down 20px from the top of the document, show the button
 // window.onscroll = function() {scrollFunction()};
@@ -89,8 +132,17 @@
 // function topFunction() {
 //   document.body.scrollTop = 0; // For Safari
 //   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-// } -->
+// }
 
+
+
+
+
+					);
+	 	    };
+				slide();
+	    });
+	  </script>
 
 
 
