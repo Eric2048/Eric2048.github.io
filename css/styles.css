@@ -46,10 +46,10 @@
   padding-left: 0;
 }
 
-#nav a:active {
+/* #nav a:active {
   text-decoration:none;
   color:red;
-}
+} */
 #nav a:hover {
   color:pink;
   text-decoration:none;
@@ -201,7 +201,7 @@ h5 {
   }
   .show500{
     display:inherit;
-    clear:left;
+    /* clear:left; */
     width:100%;
   }
   .container {
