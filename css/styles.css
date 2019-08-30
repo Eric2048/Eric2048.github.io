@@ -5,7 +5,6 @@ h1 {
 h2 {
   font-family: 'Ramabhadra', sans-serif;
   font-size: 18px;
-  padding-left: 5px;
 }
 h3 {
   font-family: 'Roboto Condensed', sans-serif;
@@ -16,14 +15,12 @@ h3 {
 h4 {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 12px;
-  padding-left: 4px;
 }
 
 /*for right flush*/
 h5 {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 14px;
-  padding-left: 75%;
 }
 
 /* Prevent the <body> from scrolling */
@@ -98,20 +95,20 @@ h5 {
 .col100 {
   width: 97%;
   height: auto;
-  margin: 10px 1%;
+  margin: 1% 1%;
   float: left;
 }
 .col50 {
   /*background-color:green;*/
   width: 47%;
-  margin: 10px 1%;
+  margin: 1% 1%;
   float: left;
 }
 .col25 {
   /*background-color:green;*/
   width: 22.5%;
   height: 100px;
-  margin: 10px 1%;
+  margin: 1% 1%;
   float: left;
   background-color: #f0c7a1;
 }
@@ -175,7 +172,7 @@ h5 {
     /*background-color:blue;*/
     width: 47%;
     height: auto;
-    margin: 10px 1%;
+    margin: 1% 1%;
     float:left;
   }
   h5 {
@@ -205,7 +202,7 @@ h5 {
     background-color:red;
     width: 45%;
     height: 30px;
-    margin: 10px 1%;
+    margin: 1% 1%;
     float:left;
   }
 }
