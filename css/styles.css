@@ -31,7 +31,7 @@ h5 {
   overflow: hidden;
 }
 
-.container {
+.fullHeight { /* Was "container" */
   /* Force this to the full height of the browser window.
      Or use position: absolute; height: 100%; */
   height: 100vh;
@@ -48,7 +48,7 @@ h5 {
 .header {
 }
 
-/* CSS Flex gives this the remaining space in the middle of the container. */
+/* CSS Flex gives this the remaining space in the middle of the fullHeight div. */
 .middle {
   /* Allow the contents to exceed this height and scroll to show them */
   overflow: scroll;
@@ -92,18 +92,22 @@ h5 {
   float: left;
 }
 
-#nav li a.navFirst {
-  padding-left: 0;
-}
-
-#nav a:hover {
+#nav li a:hover {
   color: #ddeab3;
   text-decoration: none;
 }
 
-#nav a {
+#nav li a {
   text-decoration: none;
   color: black;
+}
+
+#nav li a.navFirst {
+  padding-left: 0;
+}
+
+#nav li a.selected {
+  color: red;
 }
 
 .col100 {
@@ -176,7 +180,7 @@ h5 {
   .show900 {
     display:inherit;
   }
-  .container {
+  .fullHeight {
     /*background-color:orange;*/
     max-width: 991px;
     /* margin: 0px auto;
@@ -206,7 +210,7 @@ h5 {
     /* clear:left; */
     width:100%;
   }
-  .container {
+  .fullHeight {
     /*background-color:green;*/
     max-width: 500px;
     /* margin: 0px auto;
