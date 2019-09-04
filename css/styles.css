@@ -94,7 +94,7 @@ h5 {
 }
 
 #nav li a:hover {
-  color: #ddeab3;
+  color: pink;
   text-decoration: none;
 }
 
@@ -108,7 +108,7 @@ h5 {
 }
 
 #nav li a.selected {
-  color: red;
+  color: #90c200;
 }
 
 .col100 {
@@ -138,8 +138,8 @@ h5 {
 /* Back to Top arrow*/
 .back-to-top {
   position: fixed;
-  bottom: 100px;
-  right: 25px;
+  bottom: 30px;
+  right: 5%;
   color: black;
   line-height: 30px;
   text-align: center;
