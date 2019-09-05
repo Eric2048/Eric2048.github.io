@@ -62,8 +62,8 @@ h5 {
   min-height: 0px;
 
   /* For IE and Firefox: hide scrollbar. See https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll */
-  -ms-overflow-style: none; // IE 10+
-  scrollbar-width: none;    // Firefox
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* For Chrome and Safari: hide scrollbar */
