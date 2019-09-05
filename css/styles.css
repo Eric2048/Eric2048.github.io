@@ -81,9 +81,11 @@ h5 {
   justify-content:center;
 }
 .flexItem {
+  margin: 4px;
+}
+.flexItem2 {
   width: 200px;
   height: 200px;
-  margin: 4px;
   background-color: blue;
 }
 
