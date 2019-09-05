@@ -40,7 +40,7 @@
 			</div>
 
 			<!-- This DIV takes up the remaining space in the middle of the fullHeight div. -->
-			<div class="middle">
+			<div id="scrollingMiddle" class="middle">
 				<!-- This child DIV scrolls within that -->
 				<div>
 					<div class="col100">
@@ -57,7 +57,13 @@
 						<a href="https://www.instagram.com/emilydelsesto/" class="NoUnderline">
 							<img border="0" alt="W3Schools" src="images/ig.svg" width="18" height="18">
 						</a>
-					
+
+						<!-- See scripts/code.js for function to show this button and to
+						     scroll to top when pressed. -->
+						<a href="javascript:scrollToTop()" id="backToTopButton" class="back-to-top" title="Back To Top">
+						  <img src="images/top.svg" width="50px" height="50px">
+						</a>
+
 						<h4 class="padding-top">Web Design by Emily Del Sesto</h4>
 				</div>
 			</div>
