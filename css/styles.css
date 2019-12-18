@@ -25,14 +25,27 @@ h5 {
 .carousel{
   display:flex;
   flex-direction: row;
+  /*color:black;*/
 }
 
-/*
 .carousel-control-prev2,
-.carousel-control-next2 {
-  background-color:red;
+.carousel-control-prev2:hover,
+.carousel-control-prev2:visited,
+.carousel-control-prev2:link,
+.carousel-control-prev2:active,
+.carousel-control-next2,
+.carousel-control-next2:hover,
+.carousel-control-next2:visited,
+.carousel-control-next2:link,
+.carousel-control-next2:active {
+  text-decoration: none;
+  color:black;
 }
-*/
+
+.carousel-control-prev2:hover,
+.carousel-control-next2:hover {
+  color: pink;
+}
 
 .carousel-control-prev2 > div,
 .carousel-control-next2 > div {
@@ -40,17 +53,25 @@ h5 {
   height: 100%; 
   width: 2em;
   padding-left: 4px;
-  background-color: blue;
 }
 .carousel-control-next2 > div {
-  padding-left: 1px;
+  padding-left: 6px;
+
 }
 
-.carousel-control-prev2 > div > span,
-.carousel-control-next2 > div > span {
-  vertical-align:middle;
-  display:table-cell; 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: table-cell; 
+  vertical-align: middle;
+
+  background-image: unset;
+  font-size: 36px;
 }
+
+/*#carouselExampleIndicators{
+ color: black;
+}*/
+
 
 .padding-top{
   padding-top:12px;
@@ -119,7 +140,7 @@ h5 {
 .flexItem2 {
   width: 200px;
   height: 200px;
-  background-color: blue;
+  background-color: black;
 }
 
 /* NAV */
@@ -158,7 +179,12 @@ h5 {
 #nav li a.selected {
   color: #90c200;
 }
-
+.col100Fill{
+   width: 97%;
+  height: 100px;
+  margin: 1% 1%;
+  float: left;
+}
 .col100 {
   width: 97%;
   height: auto;
