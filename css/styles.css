@@ -13,13 +13,13 @@ h3 {
 }
 /* Footer Type*/
 h4 {
-  font-family: 'Roboto Condensed', sans-serif;
+  /* font-family: 'Roboto Condensed', sans-serif; */
   font-size: 12px;
 }
 
 /*for right flush*/
 h5 {
-  font-family: 'Roboto Condensed', sans-serif;
+  /* font-family: 'Roboto Condensed', sans-serif; */
   font-size: 14px;
 }
 
@@ -32,7 +32,8 @@ h5 {
 .carousel-control-next:link,
 .carousel-control-next:active {
   text-decoration: none;
-  color: black;
+  color: white;
+  -webkit-text-stroke: 1px black;
 }
 
 /* Can only set visibility for the <div>, not the outer <a> */
@@ -41,10 +42,20 @@ h5 {
   visibility: hidden;
 }
 
+.carousel-control-prev > div > span {
+  position: absolute;
+  left: 10px;
+}
+
+.carousel-control-next > div > span {
+  position: absolute;
+  right: 10px;
+}
+
 .carousel-control-prev:hover > div,
 .carousel-control-next:hover > div {
   visibility: visible;
-  color: grey;
+  color: white;
 }
 
 .carousel-control-prev-icon,
