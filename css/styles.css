@@ -310,16 +310,16 @@ button.navbar-toggler {
     padding-right: 4px;
     font-size: 14px;
   } */
-  .fullHeight {
+  /* .fullHeight {
     padding-left: 0px;
     padding-right: 0px;
-  }
-  div.header > div.col100 {
+  } */
+  /* div.header > div.col100 {
     padding-left: 6px;
     padding-right: 6px;
   }
   div.header > div.col100 > ul.nav {
     display: flex;
     justify-content: space-between;
-  }
+  } */
 }
