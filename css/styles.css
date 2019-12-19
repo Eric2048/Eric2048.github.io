@@ -157,12 +157,12 @@ h5 {
 
 /* #nav li a:hover, */
 .navbar.navbar-expand-lg > div > ul > li a.nav-link:hover {
-  color: #f9ad81;
+  color: #cccccc;
 }
 
 /* #nav li a.selected, */
 .navbar.navbar-expand-lg > div > ul > li a.nav-link.selected {
-  color: #f26c4f;
+  color: #b0b0ae;
 }
 
 a.navbar-brand {
