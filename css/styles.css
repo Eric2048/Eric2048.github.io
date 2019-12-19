@@ -44,7 +44,7 @@ h5 {
 
 .carousel-control-prev2:hover,
 .carousel-control-next2:hover {
-  color: pink;
+  color: grey;
 }
 
 .carousel-control-prev2 > div,
@@ -163,7 +163,7 @@ h5 {
 }
 
 #nav li a:hover {
-  color: pink;
+  color: #f9ad81;
   text-decoration: none;
 }
 
@@ -177,7 +177,7 @@ h5 {
 }
 
 #nav li a.selected {
-  color: #90c200;
+  color: #f26c4f;
 }
 .col100Fill{
    width: 97%;
