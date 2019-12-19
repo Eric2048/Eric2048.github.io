@@ -26,31 +26,32 @@
   <body class="noScroll">
     <div class="fullHeight">
       <div class="header">
-        <div class="col100">
-          <a href="index.html">
+        <nav class="navbar navbar-expand-lg navbar-light"> <!-- Removed bg-light -->
+          <a class="navbar-brand" href="index.html">
             <img border="0" alt="Emily Del Sesto" src="images/emilydelsesto.svg" width="160" height="40">
           </a>
-          <ul id="nav">
-            <li><a href="digitalmarketing.html" class="navFirst">Digital Marketing</a></li>
-            <li><a href="branding.html">Branding</a></li>
-            <li><a href="illustration.html">Illustration</a></li>
-            <li><a href="contact.html" class="selected">Contact</a></li>
-          </ul>
-        </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"       ><a class="nav-link"          href="digitalmarketing.html">Digital Marketing</a></li>
+              <li class="nav-item"       ><a class="nav-link"          href="branding.html">Branding</a></li>
+              <li class="nav-item"       ><a class="nav-link"          href="illustration.html">Illustration</a></li>
+              <li class="nav-item active"><a class="nav-link selected" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
 
-      <!-- This DIV takes up the remaining space in the middle of the fullHeight div. -->
-      <div id="scrollingMiddle" class="middle">
-        <!-- This child DIV scrolls within that -->
+      <div>
         <div>
-          <div class="col100">
-            <img src="images/contact_info.png" width="200px" height="140px">
-          </div>
+          <img src="images/contact_info.png" width="200px" height="140px">
         </div>
-      </div> <!-- scrollingMiddle -->
+      </div>
         
       <div class="footer">
-        <div class="col100">
+        <div>
           <a href="https://www.instagram.com/emiilyelise/" class="NoUnderline">
             <img border="0" alt="W3Schools" src="images/ig.svg" width="18" height="18">
           </a>

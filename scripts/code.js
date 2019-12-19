@@ -9,7 +9,6 @@ document.body.onscroll = function() {
     if (window.scrollY === 0) {
       b.style.display = "none";
     } else {
-      console.log("showing");
       b.style.display = "block";
     }
   }

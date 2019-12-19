@@ -6,8 +6,8 @@
     <meta name="google" content="notranslate" />
     <meta http-equiv="Content-Language" content="en_US" />
 
-    <!-- Take contro2l of ViewPort ( amount of webpage we can see ) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Take control of ViewPort ( amount of webpage we can see ) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Emily Del Sesto - Digital Marketing</title>
 
     <!-- google fonts -->
@@ -26,50 +26,53 @@
   <body class="noScroll">
     <div class="fullHeight">
       <div class="header">
-        <div class="col100">
-          <a href="index.html">
+        <nav class="navbar navbar-expand-lg navbar-light"> <!-- Removed bg-light -->
+          <a class="navbar-brand" href="index.html">
             <img border="0" alt="Emily Del Sesto" src="images/emilydelsesto.svg" width="160" height="40">
           </a>
-          <ul id="nav">
-            <li><a href="digitalmarketing.html" class="navFirst selected">Digital Marketing</a></li>
-            <li><a href="branding.html">Branding</a></li>
-            <li><a href="illustration.html">Illustration</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active"><a class="nav-link selected" href="digitalmarketing.html">digital marketing</a></li>
+              <li class="nav-item"       ><a class="nav-link"          href="branding.html">branding</a></li>
+              <li class="nav-item"       ><a class="nav-link"          href="illustration.html">illustration</a></li>
+              <li class="nav-item"       ><a class="nav-link"          href="contact.html">contact</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
 
-      <!-- This DIV takes up the remaining space in the middle of the fullHeight div. -->
-      <div id="scrollingMiddle" class="middle">
-        <!-- This child DIV scrolls within that -->
+      <div>
+        <!-- slide -->            
         <div>
-          <!-- slide -->            
-          <div class="col100">
-            <h2>CURVE</h2>
-            <img class="imgSizer" src="images/denimEdit.gif">
-          </div>
-          
-          <div class="col100">
-            <img class="imgSizer" src="images/curve7.png">
-          </div>
-          
-          <div class="col100">
-            <img class="imgSizer" src="images/silkRibbedEdit.gif">
-          </div>
-          
-          <div class="col100Fill">
-          </div>
-
-          <div class="col100">
-            <h2>MISS LOLA</h2>
-            <img class="imgSizer" src="images/missLola1.gif">
-          </div>
-        
+          <h2>CURVE</h2>
+          <img class="imgSizer" src="images/denimEdit.gif">
         </div>
-      </div> <!-- scrollingMiddle -->
+        
+        <div>
+          <img class="imgSizer" src="images/curve7.png">
+        </div>
+        
+        <div>
+          <img class="imgSizer" src="images/silkRibbedEdit.gif">
+        </div>
+        
+        <!-- <div class="col100Fill">  use this type of CSS class if need media queries to control this
+        </div> -->
+        <br />
+        <br />
+        <br />
+
+        <div>
+          <h2>MISS LOLA</h2>
+          <img class="imgSizer" src="images/missLola1.gif">
+        </div>      
+      </div>
       
       <div class="footer">
-        <div class="col100">
+        <div>
           <a href="https://www.instagram.com/emiilyelise/" class="NoUnderline">
             <img border="0" alt="W3Schools" src="images/ig.svg" width="18" height="18">
           </a>

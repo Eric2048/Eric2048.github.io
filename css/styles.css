@@ -22,59 +22,39 @@ h5 {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 14px;
 }
-.carousel {
-  display:flex;
-  flex-direction: row;
-  /*color:black;*/
-}
 
-.carousel-control-prev2,
-.carousel-control-prev2:hover,
-.carousel-control-prev2:visited,
-.carousel-control-prev2:link,
-.carousel-control-prev2:active,
-.carousel-control-next2,
-.carousel-control-next2:hover,
-.carousel-control-next2:visited,
-.carousel-control-next2:link,
-.carousel-control-next2:active {
+.carousel-control-prev,
+.carousel-control-prev:visited,
+.carousel-control-prev:link,
+.carousel-control-prev:active,
+.carousel-control-next,
+.carousel-control-next:visited,
+.carousel-control-next:link,
+.carousel-control-next:active {
   text-decoration: none;
-  color:black;
+  color: black;
 }
 
-.carousel-control-prev2:hover,
-.carousel-control-next2:hover {
+/* Can only set visibility for the <div>, not the outer <a> */
+.carousel-control-prev > div,
+.carousel-control-next > div {
+  visibility: hidden;
+}
+
+.carousel-control-prev:hover > div,
+.carousel-control-next:hover > div {
+  visibility: visible;
   color: grey;
-}
-
-.carousel-control-prev2 > div,
-.carousel-control-next2 > div {
-  display: table;
-  height: 100%; 
-  width: 2em;
-  padding-left: 4px;
-}
-.carousel-control-next2 > div {
-  padding-left: 6px;
-
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  display: table-cell; 
-  vertical-align: middle;
-
   background-image: unset;
   font-size: 36px;
 }
 
-/*#carouselExampleIndicators{
- color: black;
-}*/
-
-
-.padding-top{
-  padding-top:12px;
+.padding-top {
+  padding-top: 12px;
 }
 
 /* Prevent the <body> from scrolling */
@@ -98,8 +78,8 @@ h5 {
   display: flex;
   flex-direction: column;
 
-  padding-left:20px;
-  padding-right:20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* This will take the height that it needs for the Logo and Nav */
@@ -121,15 +101,14 @@ h5 {
 }
 
 /* For Chrome and Safari: hide scrollbar */
-.middle::-webkit-scrollbar { 
+/* .middle::-webkit-scrollbar { 
     display: none;
-}
+} */
 
-/* This will take the height it needs for the social icons & Credits */
 .footer {
 }
 
-.flexContainer {
+/* .flexContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content:center;
@@ -141,45 +120,64 @@ h5 {
   width: 200px;
   height: 200px;
   background-color: black;
-}
+} */
 
 /* NAV */
-#nav {
-  width:100%;
+.navbar {
+  padding-left: 0px;
+}
+
+/* #nav {
+  width: 100%;
   padding-left: 0;
   padding-top: 0;
   list-style: none;
-}
+} */
 
 /* pulls nav into a horizontal row */
-#nav li a {
+/* #nav li a {
   display: block;
+  float: left; 
   padding: 8px 12px;
-  text-decoration: none;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 15px;
-  color: black;
-  float: left;
-}
-
-#nav li a:hover {
-  color: #f9ad81;
-  text-decoration: none;
-}
-
-#nav li a {
-  text-decoration: none;
-  color: black;
 }
 
 #nav li a.navFirst {
   padding-left: 0;
+} */
+
+.navbar.navbar-expand-lg > div > ul > li a.nav-link {
+  /* padding: 8px 12px; */
+  text-decoration: none;
+  /* font-family: 'Roboto Condensed', sans-serif; */
+  font-size: 15px;
+  color: black;
+  /* No outline when focused */
+  outline: 0px;
 }
 
-#nav li a.selected {
+/* #nav li a:hover, */
+.navbar.navbar-expand-lg > div > ul > li a.nav-link:hover {
+  color: #f9ad81;
+}
+
+/* #nav li a.selected, */
+.navbar.navbar-expand-lg > div > ul > li a.nav-link.selected {
   color: #f26c4f;
 }
-.col100Fill{
+
+a.navbar-brand {
+  /* No outline when focused */
+  outline: 0px;
+}
+
+button.navbar-toggler {
+  /* No border when not pressed */
+  border: unset;
+  /* No outline when focused */
+  outline: 0px;
+}
+
+.col100Fill {
    width: 97%;
   height: 100px;
   margin: 1% 1%;
@@ -254,7 +252,6 @@ h5 {
     display:inherit;
   }
   .fullHeight {
-    /*background-color:orange;*/
     max-width: 991px;
     /* margin: 0px auto;
     margin-top: 100px; */
@@ -269,7 +266,6 @@ h5 {
   h5 {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 14px;
-    padding-left:10px;
   }
 }
 
@@ -299,11 +295,10 @@ h5 {
 }
 
 @media only screen and (max-width: 400px) {
-  #nav li a {
+  /* #nav li a {
     padding-right: 4px;
     font-size: 14px;
-    /*background-color: red;*/
-  }
+  } */
   .fullHeight {
     padding-left: 0px;
     padding-right: 0px;
