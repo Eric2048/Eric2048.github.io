@@ -44,7 +44,8 @@
         </nav>
       </div>
 
-      <video class="imgSizer" width="1200" height="800" loop muted autoplay>
+      <!-- imgSizer -->
+      <video id="myVideo" class="myVideoC" width="1200" height="800" loop muted autoplay>
         <!-- 
           https://www.dummies.com/consumer-electronics/smartphones/iphone/iphone-compatible-video-formats/
           Video formats supported:
@@ -56,10 +57,11 @@
             H.264 video, High profile and AAC audio, in container formats .mov, .mp4, or MPEG Segment .ts. MPEG Segment files are used for HTTP Live Streaming.
             For maximum compatibility with Android and desktop browsers, use H.264 + AAC in an .mp4 container.
             For extended length videos longer than 10 minutes you must use HTTP Live Streaming, which is H.264 + AAC in a series of small .ts container files (see App Store Review Guidelines rule 2.5.7).
+          http://www.pavtube.com/iphone-video-format-supported.html
           -->
-        <source src="images/foldHoodie_zamzar_iphone.mp4" type="video/mp4">
         <source src="images/foldHoodie.mp4" type="video/mp4">
       </video> 
+      <input type="button" value="Play" onclick="document.getElementById('myVideo').play()">
 
       <!-- <div>
       <img class="imgSizer" src="images/largetest.jpg">
