@@ -44,24 +44,17 @@
         </nav>
       </div>
 
-      <!-- imgSizer -->
-      <video id="myVideo" class="myVideoC" width="1200" height="800" loop muted autoplay playsinline>
-        <!-- 
-          https://www.dummies.com/consumer-electronics/smartphones/iphone/iphone-compatible-video-formats/
-          Video formats supported:
-            H.264 video up to 1080p, 60 frames per second, High Profile level 4.2 with AAC-LC audio up to 160 Kbps, 48kHz, stereo audio in .m4v, .mp4, and .mov file formats;
-            MPEG-4 video up to 2.5 Mbps, 640 by 480 pixels, 30 frames per second, Simple Profile with AAC-LC audio up to 160 Kbps per channel, 48kHz, stereo audio in .m4v, .mp4, and .mov file formats;
-            Motion JPEG (M-JPEG) up to 35 Mbps, 1280 by 720 pixels, 30 frames per second, audio in ulaw, PCM stereo audio in .avi file format.
-            
+      <!-- 
+        https://stackoverflow.com/questions/20347352/html5-video-tag-not-working-in-safari-iphone-and-ipad
+          use playsinline
+        Also see:
+          https://www.dummies.com/consumer-electronics/smartphones/iphone/iphone-compatible-video-formats/            
           https://stackoverflow.com/questions/1535836/video-file-formats-supported-in-iphone
-            H.264 video, High profile and AAC audio, in container formats .mov, .mp4, or MPEG Segment .ts. MPEG Segment files are used for HTTP Live Streaming.
-            For maximum compatibility with Android and desktop browsers, use H.264 + AAC in an .mp4 container.
-            For extended length videos longer than 10 minutes you must use HTTP Live Streaming, which is H.264 + AAC in a series of small .ts container files (see App Store Review Guidelines rule 2.5.7).
           http://www.pavtube.com/iphone-video-format-supported.html
-          -->
+        -->
+      <video class="imgSizer" width="1200" height="800" loop muted autoplay playsinline>
         <source src="images/foldHoodie.mp4" type="video/mp4">
       </video> 
-      <input type="button" value="Play" onclick="document.getElementById('myVideo').play()">
 
       <!-- <div>
       <img class="imgSizer" src="images/largetest.jpg">
